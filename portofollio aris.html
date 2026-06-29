@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Aris</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+nav{
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    display:block;
+}
+
+nav ul li a:hover{
+    background:#2563eb;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+section{
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+section h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+    border-left:5px solid #2563eb;
+    padding-left:10px;
+}
+
+.card{
+    margin-bottom:25px;
+}
+
+.card h3{
+    color:#1e3a8a;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#2563eb;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.gallery-item{
+    background:#e2e8f0;
+    padding:50px;
+    text-align:center;
+    border-radius:10px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+.contact p{
+    margin-bottom:10px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<img src="foto-aris.jpg"=alt="foto-aris" class="profile-img">
+
+<h1>ARIS</h1>
+
+<p>Mahasiswa Bisnis Digital</p>
+
+<p>Universitas Muhammadiyah Pontianak</p>
+
+<p>
+Aktif dalam bidang kepemimpinan, organisasi, dakwah, pendidikan,
+hubungan masyarakat, dan pengembangan masyarakat.
+</p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#pendidikan">Pendidikan</a></li>
+<li><a href="#organisasi">Organisasi</a></li>
+<li><a href="#kerja">Kerja</a></li>
+<li><a href="#skill">Skill</a></li>
+<li><a href="#portofolio">Portofolio</a></li>
+<li><a href="#sertifikat">Sertifikat</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<section id="tentang">
+
+<h2>Tentang Saya</h2>
+
+<section id="tentang-saya">
+
+<style>
+
+#tentang-saya{
+    background:#ffffff;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    margin:40px auto;
+    max-width:1200px;
+}
+
+#tentang-saya h2{
+    text-align:center;
+    color:#1e3a8a;
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.about-content p{
+    text-align:justify;
+    line-height:1.9;
+    margin-bottom:20px;
+    color:#444;
+    font-size:16px;
+}
+
+.visi-misi{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.box{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:12px;
+    border-left:5px solid #2563eb;
+}
+
+.box h3{
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.box p,
+.box li{
+    line-height:1.8;
+}
+
+.box ul{
+    padding-left:20px;
+}
+
+.nilai{
+    margin-top:40px;
+}
+
+.nilai h3{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.nilai-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.nilai-item{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nilai-item:hover{
+    transform:translateY(-5px);
+}
+
+.motto{
+    margin-top:40px;
+}
+
+.motto h3{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+blockquote{
+    background:#eef2ff;
+    padding:25px;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    text-align:center;
+    font-style:italic;
+    font-size:18px;
+    color:#333;
+}
+
+</style>
+
+<h2>Tentang Saya</h2>
+
+<div class="about-content">
+
+<p>
+Halo, saya <strong>Aris</strong>, mahasiswa Program Studi
+<strong>Bisnis Digital</strong> di Universitas Muhammadiyah Pontianak yang memiliki minat besar dalam pengembangan teknologi digital, kepemimpinan organisasi, komunikasi publik, serta pemberdayaan masyarakat. Selama menempuh pendidikan di perguruan tinggi, saya aktif mengikuti berbagai organisasi kemahasiswaan sebagai sarana untuk mengembangkan kemampuan akademik, keterampilan sosial, dan jiwa kepemimpinan.
+</p>
+
+<p>
+Saya percaya bahwa proses belajar tidak hanya berlangsung di dalam ruang kelas, tetapi juga melalui pengalaman berorganisasi, kegiatan sosial, dan keterlibatan langsung dalam berbagai program kemahasiswaan. Oleh karena itu, saya aktif berkontribusi dalam berbagai organisasi kampus maupun organisasi kemasyarakatan yang berfokus pada pengembangan karakter, kepemimpinan, dakwah, dan pengabdian kepada masyarakat.
+</p>
+
+<p>
+Melalui pengalaman sebagai pengurus organisasi, saya terbiasa bekerja dalam tim, mengelola kegiatan, membangun komunikasi dengan berbagai pihak, serta menyelesaikan tugas secara terstruktur dan bertanggung jawab. Pengalaman tersebut membentuk kemampuan saya dalam memimpin, beradaptasi dengan lingkungan yang dinamis, serta mengambil keputusan secara efektif dalam berbagai situasi.
+</p>
+
+<p>
+Selain aktif dalam organisasi, saya juga memiliki pengalaman kerja sebagai <strong>Crew Outlet Jelly Potter</strong> yang memberikan pemahaman mengenai pelayanan pelanggan, manajemen operasional, kerja tim, dan tanggung jawab dalam dunia kerja. Pengalaman ini membantu saya mengembangkan kemampuan komunikasi interpersonal, pelayanan prima, serta disiplin dalam menjalankan tugas sesuai standar operasional perusahaan.
+</p>
+
+<p>
+Di bidang akademik, saya memiliki ketertarikan pada topik bisnis digital, pengembangan sumber daya manusia, kepemimpinan, literasi informasi, komunikasi organisasi, serta pengelolaan organisasi modern. Ketertarikan tersebut mendorong saya untuk terus belajar, melakukan penelitian sederhana, dan mengembangkan wawasan mengenai transformasi digital dalam dunia bisnis dan organisasi.
+</p>
+
+<p>
+Saat ini saya terus berupaya meningkatkan kompetensi melalui berbagai pelatihan, seminar, kegiatan organisasi, serta pengalaman lapangan. Saya memiliki semangat untuk menjadi individu yang profesional, berintegritas, mampu bekerja sama dalam tim, serta memberikan kontribusi positif bagi masyarakat, organisasi, dan dunia kerja di masa depan.
+</p>
+
+</div>
+
+<div class="visi-misi">
+
+<div class="box">
+
+<h3>Visi Pribadi</h3>
+
+<p>
+Menjadi lulusan Bisnis Digital yang kompeten, berkarakter Islami, memiliki kemampuan kepemimpinan yang baik, serta mampu memberikan kontribusi nyata dalam pengembangan organisasi, masyarakat, dan dunia bisnis berbasis teknologi digital.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Misi Pribadi</h3>
+
+<ul>
+<li>Mengembangkan kompetensi akademik dan profesional secara berkelanjutan.</li>
+<li>Aktif berkontribusi dalam organisasi dan kegiatan sosial kemasyarakatan.</li>
+<li>Meningkatkan kemampuan komunikasi, kepemimpinan, dan manajemen.</li>
+<li>Memanfaatkan teknologi digital untuk menciptakan solusi yang bermanfaat.</li>
+<li>Menjaga nilai-nilai keislaman dalam kehidupan pribadi maupun profesional.</li>
+<li>Menjadi pribadi yang adaptif, inovatif, dan berorientasi pada pengembangan diri.</li>
+</ul>
+
+</div>
+
+
+<div class="nilai">
+
+<h3>Nilai-Nilai yang Saya Pegang</h3>
+
+<div class="nilai-grid">
+
+<div class="nilai-item">Integritas</div>
+<div class="nilai-item">Tanggung Jawab</div>
+<div class="nilai-item">Disiplin</div>
+<div class="nilai-item">Kepemimpinan</div>
+<div class="nilai-item">Kerja Sama Tim</div>
+<div class="nilai-item">Komunikasi</div>
+<div class="nilai-item">Pembelajaran Berkelanjutan</div>
+<div class="nilai-item">Kepedulian Sosial</div>
+
+</div>
+
+
+<div class="motto">
+
+<h3>Motto Hidup</h3>
+
+<ul>
+"Belajar, Berkarya, dan Mengabdi untuk Memberikan Manfaat yang Lebih Luas bagi Masyarakat."
+</ul>
+
+</div>
+
+</section>
+
+</p>
+
+<br>
+
+<h3>Data Pribadi</h3>
+
+<ul>
+<li><strong>Nama :</strong> Aris</li>
+<li><strong>Program Studi :</strong> Bisnis Digital</li>
+<li><strong>Universitas :</strong> Universitas Muhammadiyah Pontianak</li>
+<li><strong>Alamat :</strong> Kalimantan Barat, Indonesia</li>
+<li><strong>Email :</strong> arissen642@email.com</li>
+<li><strong>Telepon :</strong> 08314113930</li>
+</ul>
+
+</section>
+
+<section id="pendidikan">
+
+<h2>Pendidikan</h2>
+
+<div class="card">
+<h3>Universitas Muhammadiyah Pontianak</h3>
+<p>Program Studi Bisnis Digital</p>
+<p>2024 - Sekarang</p>
+</div>
+
+<div class="card">
+<h3>Sekolah Menengah Atas</h3>
+<p>Jurusan IPS</p>
+<p>Lulus Tahun 2024</p>
+</div>
+
+</section>
+
+<section id="organisasi">
+
+<h2>Pengalaman Organisasi</h2>
+
+<div class="card">
+<h3>Ikatan Mahasiswa Muhammadiyah (IMM)</h3>
+<p><strong>Bidang Tabligh</strong></p>
+<ul>
+<li>Melaksanakan program dakwah kampus.</li>
+<li>Mengelola kegiatan keagamaan mahasiswa.</li>
+<li>Membantu pembinaan kader IMM.</li>
+<li>Menyebarluaskan informasi kegiatan tabligh.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tapak Suci Putera Muhammadiyah</h3>
+<p><strong>Hubungan Masyarakat (Humas)</strong></p>
+<ul>
+<li>Mengelola komunikasi organisasi.</li>
+<li>Membantu publikasi kegiatan.</li>
+<li>Membangun relasi dengan pihak eksternal.</li>
+<li>Mendokumentasikan kegiatan organisasi.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Himpunan Mahasiswa Bisnis Digital</h3>
+<p><strong>Bidang Kerohanian</strong></p>
+<ul>
+<li>Mengelola kegiatan keagamaan mahasiswa.</li>
+<li>Menyusun program pembinaan spiritual.</li>
+<li>Membantu peringatan hari besar Islam.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Forum Mahasiswa Al-Islam dan Kemuhammadiyahan (FM AIK)</h3>
+<p><strong>Humas</strong></p>
+<ul>
+<li>Mengelola publikasi kegiatan.</li>
+<li>Menyebarkan informasi program kerja.</li>
+<li>Menjalin komunikasi antarorganisasi.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>MATA UMP</h3>
+<p><strong>Bidang Pendidikan dan Pelatihan (DIKLAT)</strong></p>
+<ul>
+<li>Mengelola program pendidikan anggota.</li>
+<li>Menyusun materi pelatihan.</li>
+<li>Membantu kaderisasi anggota baru.</li>
+<li>Mengembangkan kompetensi anggota.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Remaja Masjid Nuruddin</h3>
+<p><strong>Anggota</strong></p>
+<ul>
+<li>Membantu kegiatan keagamaan.</li>
+<li>Mendukung kegiatan sosial masyarakat.</li>
+<li>Berpartisipasi dalam pembinaan remaja masjid.</li>
+</ul>
+</div>
+
+</section>
+
+<section id="kerja">
+
+<h2>Pengalaman Kerja</h2>
+
+<div class="card">
+
+<h3>Jelly Potter</h3>
+
+<p><strong>Crew Outlet</strong></p>
+
+<ul>
+<li>Melayani pelanggan secara profesional.</li>
+<li>Mengelola transaksi penjualan.</li>
+<li>Menyiapkan produk sesuai SOP.</li>
+<li>Menjaga kebersihan outlet.</li>
+<li>Mengelola stok bahan baku.</li>
+<li>Membantu promosi produk.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="skill">
+
+<h2>Keterampilan</h2>
+
+<div class="skills">
+
+<div class="skill">Leadership</div>
+<div class="skill">Public Speaking</div>
+<div class="skill">Public Relations</div>
+<div class="skill">Team Work</div>
+<div class="skill">Microsoft Word</div>
+<div class="skill">Microsoft Excel</div>
+<div class="skill">Microsoft PowerPoint</div>
+<div class="skill">Google Workspace</div>
+<div class="skill">Canva</div>
+<div class="skill">Administrasi Organisasi</div>
+<div class="skill">Penulisan Ilmiah</div>
+<div class="skill">Komunikasi</div>
+
+</div>
+
+</section>
+
+<section id="portofolio">
+
+<h2>Portofolio Kegiatan</h2>
+
+<ul>
+<li>Hari Lingkungan Hidup Sedunia</li>
+<li>Kegiatan Dakwah Kampus</li>
+<li>Pelatihan Kepemimpinan Mahasiswa</li>
+<li>Kaderisasi Organisasi Mahasiswa</li>
+<li>Kegiatan Kepecintaalaman MATA UMP</li>
+<li>Pengabdian Kepada Masyarakat</li>
+<li>Pembinaan Remaja Masjid</li>
+</ul>
+
+<br>
+
+<h3>Karya Akademik</h3>
+
+<ul>
+<li>Paradigma Ilmu Bebas dan Ilmu Tidak Bebas</li>
+<li>Peran Pustakawan dalam Literasi Informasi</li>
+<li>Kepemimpinan Multikultural</li>
+<li>Pengembangan Sumber Daya Manusia</li>
+</ul>
+
+</section>
+
+<section id="sertifikat">
+
+<h2>Sertifikat</h2>
+
+<ul>
+<li>Pelatihan Kepemimpinan Mahasiswa</li>
+<li>Pelatihan Organisasi</li>
+<li>Pelatihan Kepecintaalaman</li>
+<li>Seminar Nasional</li>
+<li>Kajian Al-Islam dan Kemuhammadiyahan</li>
+<li>Kegiatan Kemahasiswaan</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Galeri Kegiatan</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">IMM</div>
+<div class="gallery-item">Tapak Suci</div>
+<div class="gallery-item">MATA UMP</div>
+<div class="gallery-item">FM AIK</div>
+<div class="gallery-item">HIMABID</div>
+<div class="gallery-item">Jelly Potter</div>
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<h2>Kontak</h2>
+
+<div class="contact">
+
+<p><strong>Email :</strong> arissen642@email.com</p>
+
+<p><strong>WhatsApp :</strong> 083141183930</p>
+
+<p><strong>Instagram :</strong>_arissen</p>
+
+<p><strong>LinkedIn :</strong> linkedin.com/in/aris</p>
+
+<p><strong>Lokasi :</strong> Kalimantan Barat, Indonesia</p>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<h3>ARIS</h3>
+
+<p>
+Mahasiswa Bisnis Digital | Aktivis Organisasi | Pengembangan Kepemimpinan
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
